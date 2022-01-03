@@ -123,20 +123,223 @@ img {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
 }
+
 /*==================== LAYOUT ====================*/
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-inline: var(--mb-2);
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: #000;
+}
 
 /*==================== NAV ====================*/
 
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #000;
+    transition: 900ms;
+    box-shadow: 0 2px 4px rgba(0 0 0 /0.1);
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+.nav__item {
+  margin-bottom: var(--mb-3);
+}
+
+.nav__link {
+  color: var(--primary-color-lighten);
+  transition: 300ms;
+}
+
+.nav__link:hover {
+  color: var(--primary-color-light);
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--primary-color-lighten);
+}
+
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
 /* show menu */
+.show-menu {
+  top: var(--header-height);
+}
 
 /* Active link */
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  background-color: var(--primary-color-light);
+}
 
 /* Change background header */
+.scroll-header {
+  background-color: var(--primary-color-lighten);
+  box-shadow: 0 2px 4px rgba(0 0 0 /0.1);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle,
+.scroll-header .nav__link {
+  color: var(--primary-color-dark);
+}
+
+.scroll-header .nav__menu {
+  background-color: var(--primary-color-lighten);
+}
+
+/*================= Scroll TOP =================*/
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(123 111 113 /0.7);
+  border-radius: 0.5rem;
+  z-index: var(--z-tooltip);
+  transition: 400ms;
+  visibility: hidden;
+}
+
+.scrolltop :hover {
+  background-color: var(--primary-color);
+}
+
+.scrolltop__icon {
+  font-size: 2rem;
+  color: var(--primary-color-lighten);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
 
 /*==================== HOME ====================*/
+.home {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.home__container {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+  grid-template-rows: repeat(2, max-content);
+  align-content: space-around;
+  gap: 2rem;
+}
+.home__data {
+  border-left: 4px solid var(--primary-color-lighten);
+  color: var(--primary-color-lighten);
+  padding-left: 1.5rem;
+  z-index: var(--z-tooltip);
+}
+
+.home-name {
+  font-size: var(--big-font-size);
+}
+
+.home__greeting,
+.home__profession {
+  display: block;
+  font-weight: var(--font-bold);
+}
+
+.home__greeting {
+  font-size: 0.813rem;
+}
+
+.home__profession {
+  font-size: 0.983rem;
+  margin-bottom: var(--mb-3);
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home__img img {
+  width: 400px;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__social-icon {
+  width: max-content;
+  font-size: 1.3rem;
+  margin-bottom: var(--mb-2);
+  color: var(--primary-color-lighten);
+}
+
+.home__social-icon:hover {
+  color: var(--primary-color-light);
+}
 
 /*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--primary-color-lighten);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  transition: 300ms;
+}
 
+.button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.button-light {
+  background-color: var(--primary-color-light);
+}
 /*==================== ABOUT ====================*/
 
 /*==================== SKILLS ====================*/
