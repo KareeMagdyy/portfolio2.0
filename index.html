@@ -207,7 +207,63 @@
         </div>
       </div>
     </section>
-    <div class="project section bd-container">
+
+    <!-- ====== PORTFOLIO ======= -->
+    <section class="portfolio section bd-container" id="portfolio">
+      <span class="section-subtitle">My work</span>
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="portfolio__nav">
+        <span class="portfolio__item" data-filter="all">All</span>
+        <span class="portfolio__item" data-filter=".html">HTML</span>
+        <span class="portfolio__item" data-filter=".css">CSS</span>
+        <span class="portfolio__item" data-filter=".js">JS</span>
+      </div>
+
+      <div class="portfolio__container bd-grid">
+
+        <div class="portfolio__content mix all">
+          <a href="#"><img src="/assets/img/genshin-wish-tool.png" alt="Wish Calculator Thumbnail"
+              class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">HTML,CSS & JS</span>
+            <a href="#">
+              <h2 class="portfolio__title">Genshin Impact Wish Calculator</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix html css">
+          <a href="#"><img src="/assets/img/genshin-wish-tool.png" alt="Wish Calculator Thumbnail"
+              class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">HTML & CSS</span>
+            <a href="#">
+              <h2 class="portfolio__title">Genshin Impact Wish Calculator</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix js">
+          <a href="#"><img src="/assets/img/genshin-wish-tool.png" alt="Wish Calculator Thumbnail"
+              class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">JS</span>
+            <a href="#">
+              <h2 class="portfolio__title">Genshin Impact Wish Calculator</h2>
+            </a>
+            <a href="#" class="button button-link">View Details</a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ====== Project in mind ====== -->
+    <section class="project section bd-container">
       <div class="project__container bd-grid">
         <div class="project__data">
           <i class="bx bx-chat project__icon"></i>
@@ -220,8 +276,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
+
+  <!-- ====== MixItUp ====== -->
+  <script src="/assets/js/mixitup.min.js"></script>
   <!-- ====== MAIN JS ====== -->
   <script src="/assets/js/app.js"></script>
 </body>

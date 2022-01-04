@@ -69,3 +69,27 @@ function scrollTop() {
 }
 
 window.addEventListener("scroll", scrollTop);
+
+/* ====== MixItUp Filter Portfolio ======= */
+
+const mixer = mixitup(".portfolio__container", {
+  selectors: {
+    target: ".portfolio__content",
+  },
+  animation: {
+    duration: 500,
+  },
+});
+
+/* ====== Active Filter Portfolio ======= */
+
+const activeSkill = document.querySelectorAll(".portfolio__item");
+
+function activeSkills() {
+  if (activeSkill) {
+    activeSkill.forEach((s) => s.classList.remove("active-skill"));
+    this.classList.add("active-skill");
+  }
+}
+
+activeSkill.forEach((s) => s.addEventListener("click", activeSkills));
