@@ -185,6 +185,7 @@ img {
 .nav__logo,
 .nav__toggle {
   color: var(--primary-color-lighten);
+  z-index: 99;
 }
 
 .nav__toggle {
@@ -194,7 +195,7 @@ img {
 
 /* show menu */
 .show-menu {
-  top: var(--header-height);
+  top: calc(var(--header-height) - 5px);
 }
 
 /* Active link */
@@ -340,11 +341,72 @@ img {
 .button-light {
   background-color: var(--primary-color-light);
 }
+
 /*==================== ABOUT ====================*/
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--primary-color);
+}
+
+.about__number {
+  font-size: var(--h1-font-size);
+  color: var(--primary-color);
+  display: block;
+}
+
+.about__img {
+  justify-self: center;
+  width: 250px;
+  border-radius: 18px;
+}
 
 /*==================== SKILLS ====================*/
 
 /*==================== QUALIFICATION ====================*/
+
+.qualification__container {
+  row-gap: 2.5rem;
+}
+
+.qualification__title {
+  font-size: var(--h3-font-size);
+  color: var(--primary-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-2);
+  display: flex;
+  align-items: center;
+  gap: var(--mb-1);
+}
+
+.qualification__title-icon {
+  font-size: 1.5rem;
+}
+
+.qualification__box {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.qualification__icon,
+.qualification__work {
+  font-size: var(--smaller-font-size);
+  color: var(--primary-color-light);
+}
+
+.qualification__work {
+  display: block;
+}
+
+.qualification__area a {
+  color: inherit;
+  cursor: pointer;
+}
 
 /*==================== SERVICES ====================*/
 

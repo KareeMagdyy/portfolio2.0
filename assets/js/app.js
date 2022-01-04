@@ -51,7 +51,8 @@ window.addEventListener("scroll", scrollActive);
 
 function scrollHeader() {
   const header = document.getElementById("header");
-  this.scrollY >= 200
+  // console.log(this.scrollY);
+  this.scrollY >= 450
     ? header.classList.add("scroll-header")
     : header.classList.remove("scroll-header");
 }
@@ -61,7 +62,8 @@ window.addEventListener("scroll", scrollHeader);
 /*====== SCROLL TO TOP ======*/
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
-  this.scrollY >= 560
+  // console.log(this.scrollY);
+  this.scrollY >= 600
     ? scrollTop.classList.add("show-scroll")
     : scrollTop.classList.remove("show-scroll");
 }
