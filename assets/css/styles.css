@@ -437,15 +437,21 @@ img {
 }
 
 .portfolio__item {
-  margin-inline: var(--mb-1);
+  margin-left: var(--mb-1);
   cursor: pointer;
 }
 
 .portfolio__content {
   background-color: #fff;
   border-radius: 0.5rem;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(174 190 205 / 0.3);
+}
+
+.portfolio__content > a:first-child {
+  display: inline-block;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
 }
 
 .portfolio__img {

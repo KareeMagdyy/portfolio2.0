@@ -77,7 +77,7 @@ const mixer = mixitup(".portfolio__container", {
     target: ".portfolio__content",
   },
   animation: {
-    duration: 500,
+    duration: 300,
   },
 });
 
