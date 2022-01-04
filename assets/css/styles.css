@@ -400,12 +400,18 @@ img {
 }
 
 .qualification__work {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: var(--mb-1);
 }
 
-.qualification__area a {
+.qualification__work-credential {
   color: inherit;
   cursor: pointer;
+}
+
+.qualification__work-credential:hover {
+  text-decoration: underline;
 }
 
 /*==================== SERVICES ====================*/
