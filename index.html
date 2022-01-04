@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ====== SWIPER CSS ====== -->
+  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
   <!-- ====== BOX ICONS ====== -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -17,7 +20,7 @@
 
 <body>
   <!-- ====== SCROLL TO TOP ====== -->
-  <a href="#home" class="scrolltop" id="scroll-top">
+  <a href="#" class="scrolltop" id="scroll-top">
     <i class="bx bx-chevron-up scrolltop__icon"></i>
   </a>
 
@@ -277,8 +280,44 @@
         </div>
       </div>
     </section>
+
+    <!-- ====== TESTIMONIAL ====== -->
+    <section class="testimonial section bd-container" id="portfolio">
+      <span class="section-subtitle">My client said</span>
+      <h2 class="section-title">Testimonial</h2>
+
+      <div class="testimonial__container swiper">
+        <div class="swiper-wrapper">
+
+          <div class="testimonial__content swiper-slide">
+            <img src="/assets/img/Chris-test-01.jfif" alt="Christian Sanchez photo" class="testimonial__img">
+            <h3 class="testimonial__name">Christian Sanchez</h3>
+            <div class="testimonial__type">Client</div>
+            <p class="testimonial__description">"He got it done on time and correctly. Thanks!"</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="/assets/img/Chris-test-01.jfif" alt="Christian Sanchez photo" class="testimonial__img">
+            <h3 class="testimonial__name">Christian Sanchez</h3>
+            <div class="testimonial__type">Client</div>
+            <p class="testimonial__description">"He got it done on time and correctly. Thanks!"</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="/assets/img/Chris-test-01.jfif" alt="Christian Sanchez photo" class="testimonial__img">
+            <h3 class="testimonial__name">Christian Sanchez</h3>
+            <div class="testimonial__type">Client</div>
+            <p class="testimonial__description">"He got it done on time and correctly. Thanks!"</p>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
   </main>
 
+  <!-- ====== SWIPER JS ====== -->
+  <script src="/assets/js/swiper-bundle.min.js"></script>
   <!-- ====== MixItUp ====== -->
   <script src="/assets/js/mixitup.min.js"></script>
   <!-- ====== MAIN JS ====== -->
