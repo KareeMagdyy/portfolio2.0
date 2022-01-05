@@ -551,6 +551,14 @@ img {
 }
 /*==================== CONTACT ME ====================*/
 
+.contact__description > a:first-child {
+  color: inherit;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
 /*==================== FOOTER ====================*/
 
 /*========== SCROLL UP ==========*/
