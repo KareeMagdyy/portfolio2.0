@@ -302,6 +302,9 @@ img {
 .home {
   background-color: #000;
   overflow: hidden;
+  background-image: url("/assets/img/circles.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .home__container {
@@ -375,7 +378,7 @@ img {
 
 .custom-shape-divider-top-about {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -731,7 +734,7 @@ textarea {
 }
 
 .custom-shape-divider-top-footer .shape-fill {
-  fill: #fff;
+  fill: #fbf9f9;
 }
 
 /** For tablet devices **/
