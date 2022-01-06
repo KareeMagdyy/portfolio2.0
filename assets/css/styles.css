@@ -302,9 +302,6 @@ img {
 .home {
   background-color: #000;
   overflow: hidden;
-  background-image: url("/assets/img/circles.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
 }
 
 .home__container {
@@ -343,7 +340,7 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: 30px;
 }
 
 .home__img img {
@@ -793,6 +790,7 @@ textarea {
 @media screen and (min-width: 576px) {
   .home__img img {
     width: 330px;
+    bottom: 0;
   }
 
   .about__container,
