@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
   <!-- ====== BOX ICONS ====== -->
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
+  <link href='/assets/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- ====== CSS ====== -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -33,7 +34,7 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <!-- <li class="nav__item"><a href="#services" class="nav__link">Services</a></li> -->
           <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
           <li class="nav__item"><a href="#hire" class="nav__link">Hire Me</a></li>
         </ul>
@@ -67,16 +68,27 @@
       </div>
     </section>
 
+
     <!-- ====== ABOUT ====== -->
 
-    <section class="about section bd-container" id="about">
-      <span class="section-subtitle">My history</span>
-      <h2 class="section-title">About me</h2>
-      <div class="about__container bd-grid">
-        <div class="about__data bd-grid">
-          <p class="about__description"><span>Hello, I am <br></span>A Frontend developer, I am passionate about
-            developing web interfaces. With Excellent knowledge in frontend development</p>
-          <div>
+
+    <section class="about section " id="about">
+      <div class="custom-shape-divider-top-about">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="bd-container">
+        <span class="section-subtitle">My history</span>
+        <h2 class="section-title">About me</h2>
+        <div class="about__container bd-grid">
+          <img src="/assets/img/about.jpg" alt="About Img" class="about__img">
+          <div class="about__data bd-grid">
+            <p class="about__description"><span>Hello, I am <br></span>A Frontend developer, I am passionate about
+              developing web interfaces. With Excellent knowledge in frontend development</p>
+            <!-- <div>
             <span class="about__number">10+</span>
             <span class="about__achievement">Projects Completed</span>
           </div>
@@ -87,8 +99,9 @@
           <div>
             <span class="about__number">10+</span>
             <span class="about__achievement">Certificates</span>
+          </div> -->
           </div>
-          <img src="/assets/img/about.jpg" alt="About Img" class="about__img">
+
         </div>
       </div>
     </section>
@@ -368,6 +381,34 @@
         </form>
       </div>
     </section>
+
+    <!-- ======= FOOTER ======= -->
+
+    <footer class="footer">
+      <div class="footer-wave">
+        <div class="custom-shape-divider-top-footer">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="footer__container bd-container">
+        <h1 class="footer__title">Kareem Magdy</h1>
+
+        <div class="footer__social">
+          <a href="" class="footer__link"><i class="bx bxl-github"></i></a>
+          <a href="" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+          <a href="" class="footer__link"><i class="bx bxl-facebook"></i></a>
+          <a href="" class="footer__link"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer__copy">&copy; 2021-2022 Kareem Magdy. All right reserved</div>
+    </footer>
+
+
 
   </main>
 

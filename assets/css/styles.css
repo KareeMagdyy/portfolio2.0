@@ -344,12 +344,13 @@ img {
 }
 
 .home__img img {
-  width: 400px;
+  width: 250px;
 }
 
 .home__social {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .home__social-icon {
@@ -364,6 +365,54 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+
+.about {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.custom-shape-divider-top-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-about svg {
+  position: relative;
+  display: block;
+  width: calc(114% + 1.3px);
+  height: 89px;
+}
+
+.custom-shape-divider-top-about .shape-fill {
+  fill: #000000;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-about svg {
+    width: calc(120% + 1.3px);
+    height: 82px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-about svg {
+    width: calc(150% + 1.3px);
+    height: 55px;
+  }
+}
+
+.about .bd-container {
+  margin-top: var(--mb-4);
+}
 
 .about__data {
   text-align: center;
@@ -392,14 +441,13 @@ img {
 /*==================== QUALIFICATION ====================*/
 
 .qualification__container {
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
 }
 
 .qualification__title {
   font-size: var(--h3-font-size);
   color: var(--primary-color);
   margin-top: var(--mb-2);
-  margin-bottom: var(--mb-2);
   display: flex;
   align-items: center;
   gap: var(--mb-1);
@@ -447,8 +495,15 @@ img {
 }
 
 .portfolio__item {
+  display: inline-block;
   margin-left: var(--mb-1);
   cursor: pointer;
+  transition: 400ms;
+}
+
+.portfolio__item:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
 }
 
 .portfolio__content {
@@ -630,7 +685,7 @@ img {
 .contact__input::placeholder {
   color: var(--primary-color-light);
   font-family: inherit;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semi-bold);
 }
 
 .contact__button {
@@ -641,17 +696,239 @@ img {
 textarea {
   resize: none;
 }
+
 /*==================== FOOTER ====================*/
+.footer-wave {
+  position: relative;
+}
 
-/*========== SCROLL UP ==========*/
+.footer {
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color-lighten);
+  text-align: center;
+}
 
-/* Show scroll */
+.custom-shape-divider-top-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-footer svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 99px;
+}
+
+.custom-shape-divider-top-footer .shape-fill {
+  fill: #fff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-footer svg {
+    width: calc(138% + 1.3px);
+    height: 82px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-footer svg {
+    width: calc(159% + 1.3px);
+    height: 55px;
+  }
+}
+
+.footer__container {
+  padding: 4rem 0.5rem 0 0;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-semi-bold);
+}
+
+.footer__social {
+  margin-bottom: var(--mb-1);
+}
+
+.footer__link {
+  font-size: 1.5rem;
+  color: var(--primary-color-lighten);
+  margin: 0 var(--mb-1);
+  transition: 300ms;
+}
+
+.footer__link:hover {
+  color: var(--primary-color-light);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  color: var(--primary-color-light);
+  padding-bottom: var(--mb-3);
+}
 
 /*========== SCROLL BAR ==========*/
 
 /*==================== MEDIA QUERIES ====================*/
+
 /* For small devices */
+@media screen and (min-width: 576px) {
+  .home__img img {
+    width: 330px;
+  }
+
+  .about__container,
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__description {
+    text-align: left;
+    align-self: center;
+  }
+
+  .contact__form {
+    width: 450px;
+    justify-self: center;
+  }
+}
 
 /* For medium devices */
 
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 6rem;
+    /* padding-left: var(--mb-3);
+    padding-right: var(--mb-3); */
+  }
+
+  .section-title {
+    margin-bottom: var(--mb-5);
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    /* padding-left: var(--mb-3);
+    padding-right: var(--mb-3); */
+  }
+
+  .nav__list {
+    display: flex;
+    gap: var(--mb-3);
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .home__container {
+    height: 100vh;
+    grid-template-rows: max-content 0.5fr;
+    align-content: flex-end;
+  }
+
+  .home__greeting {
+    font-size: 1.2rem;
+  }
+
+  .home__name {
+    font-size: 2.75rem;
+  }
+
+  .home__profession {
+    font-size: 1.7rem;
+  }
+
+  .home__social {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--mb-4);
+  }
+
+  .home__social-icon {
+    margin-bottom: 0;
+  }
+
+  .home__img img {
+    width: 440px;
+  }
+
+  .about__img {
+    width: 300px;
+  }
+
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project__container {
+    padding: 4rem 0;
+  }
+
+  .project__data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .project__icon,
+  .project__title,
+  .project__description {
+    margin-bottom: 0;
+  }
+
+  .project__icon {
+    font-size: 6rem;
+  }
+
+  .project__title {
+    font-size: 2.5rem;
+  }
+
+  .footer__container {
+    padding: 5rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__title {
+    font-size: 1.5rem;
+  }
+
+  .footer__copy {
+    padding: var(--mb-1) 0;
+  }
+}
+
 /* For large devices */
+
+@media screen and (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qualification__container {
+    column-gap: 6rem;
+  }
+
+  .contact__form {
+    width: 75%;
+  }
+}
