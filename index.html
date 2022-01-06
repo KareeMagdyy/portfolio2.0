@@ -321,32 +321,33 @@
       <h2 class="section-title">Contact Me</h2>
 
       <div class="contact__container bd-grid">
+        <div class="contact__content bd-grid">
+          <div class="contact__box">
+            <i class="bx bx-home contact__icon"></i>
+            <h3 class="contact__title">Location</h3>
+            <span class="contact__description">Cairo, Egypt</span>
+          </div>
 
-        <div class="contact__box">
-          <i class="bx bx-home contact__icon"></i>
-          <h3 class="contact__title">Location</h3>
-          <span class="contact__description">Cairo, Egypt</span>
-        </div>
+          <div class="contact__box">
+            <i class="bx bx-phone contact__icon"></i>
+            <h3 class="contact__title">Phone</h3>
+            <span class="contact__description"><a href="tel:+201111258669">+20 111-125-8669</a></span>
+          </div>
 
-        <div class="contact__box">
-          <i class="bx bx-phone contact__icon"></i>
-          <h3 class="contact__title">Phone</h3>
-          <span class="contact__description"><a href="tel:+201111258669">+20 111-125-8669</a></span>
-        </div>
+          <div class="contact__box">
+            <i class="bx bx-envelope contact__icon"></i>
+            <h3 class="contact__title">Email</h3>
+            <span class="contact__description"><a href="mailto:karim67899@gmail.com">karim67899@gmail.com</a></span>
+          </div>
 
-        <div class="contact__box">
-          <i class="bx bx-envelope contact__icon"></i>
-          <h3 class="contact__title">Email</h3>
-          <span class="contact__description"><a href="mailto:karim67899@gmail.com">karim67899@gmail.com</a></span>
-        </div>
-
-        <div class="contact__box">
-          <i class="bx bx-chat contact__icon"></i>
-          <h3 class="contact__title">Chat</h3>
-          <div>
-            <a href="https://wa.me/201111258669" target="__blank" class="contact__social"><i
-                class="bx bxl-whatsapp-square"></i></a>
-            <a href="https://t.me/KareeMagdyy" class="contact__social"><i class="bx bxl-telegram"></i></a>
+          <div class="contact__box">
+            <i class="bx bx-chat contact__icon"></i>
+            <h3 class="contact__title">Chat</h3>
+            <div>
+              <a href="https://wa.me/201111258669" target="__blank" class="contact__social"><i
+                  class="bx bxl-whatsapp-square"></i></a>
+              <a href="https://t.me/KareeMagdyy" class="contact__social"><i class="bx bxl-telegram"></i></a>
+            </div>
           </div>
         </div>
 
@@ -358,10 +359,12 @@
 
           <div class="contact__inputs">
             <input type="text" name="project" id="project" placeholder="Project" class="contact__input">
-            <input type="number" name="number" id="number" placeholder="Number" class="contact__input">
+            <input type="tel" name="number" id="number" placeholder="Number" class="contact__input">
           </div>
 
           <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+
+          <input type="submit" value="Send Message" class=" button contact__button">
         </form>
       </div>
     </section>

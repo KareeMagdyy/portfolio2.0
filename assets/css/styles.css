@@ -237,15 +237,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.4rem;
   background-color: rgba(123 111 113 /0.7);
   border-radius: 0.5rem;
   z-index: var(--z-tooltip);
-  transition: 400ms;
+  transition: 300ms;
   visibility: hidden;
 }
 
-.scrolltop :hover {
+.scrolltop:hover {
   background-color: var(--primary-color);
 }
 
@@ -257,6 +257,45 @@ img {
 .show-scroll {
   visibility: visible;
   bottom: 1.5rem;
+}
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--primary-color-lighten);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  transition: 300ms;
+}
+
+.button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.button-light {
+  background-color: var(--primary-color-light);
+}
+
+.button-white {
+  background-color: var(--primary-color-lighten);
+  color: var(--primary-color-dark);
+}
+
+.button-white:hover {
+  background-color: var(--primary-color-lighten);
+}
+
+.button-link {
+  background-color: transparent;
+  color: var(--primary-color-light);
+  padding: 0;
+}
+
+.button-link:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
 }
 
 /*==================== HOME ====================*/
@@ -322,35 +361,6 @@ img {
 
 .home__social-icon:hover {
   color: var(--primary-color-light);
-}
-
-/*==================== BUTTONS ====================*/
-.button {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: var(--primary-color-lighten);
-  padding: 0.75rem 1rem;
-  border-radius: 0.25rem;
-  transition: 300ms;
-}
-
-.button:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.button-light {
-  background-color: var(--primary-color-light);
-}
-
-.button-white {
-  background-color: var(--primary-color-lighten);
-  color: var(--primary-color-dark);
-}
-
-.button-link {
-  background-color: transparent;
-  color: var(--primary-color);
-  padding: 0;
 }
 
 /*==================== ABOUT ====================*/
@@ -551,9 +561,81 @@ img {
 }
 /*==================== CONTACT ME ====================*/
 
+.contact__container {
+  row-gap: 2.5rem;
+}
+
 .contact__description > a:first-child {
   color: inherit;
+}
+
+.contact__content {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.contact__box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(174 190 205 /0.4);
+}
+
+.contact__box:hover {
+  box-shadow: 0 6px 8px rgba(174 190 205 /0.5);
+}
+
+.contact__icon {
+  color: var(--primary-color);
+}
+
+.contact-__title {
+  font-size: var(--h3-font-size);
+  margin: var(--mb-1) 0;
+}
+
+.contact__social {
+  color: var(--primary-color-light);
+  font-size: 1.25rem;
+  margin: 0 0.3rem;
+  transition: 400ms;
+}
+
+.contact__social:hover {
+  color: var(--primary-color);
+}
+
+.contact__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
+.contact__input,
+.contact__button {
+  outline: none;
+  font-family: inherit;
+  font-size: var(--normal-font-size);
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--primary-color-light);
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-1);
+}
+
+.contact__input::placeholder {
+  color: var(--primary-color-light);
+  font-family: inherit;
+  font-weight: var(--font-bold);
+}
+
+.contact__button {
   cursor: pointer;
+  border: none;
 }
 
 textarea {
