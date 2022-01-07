@@ -739,10 +739,6 @@ textarea {
   resize: none;
 }
 
-.contact__button {
-  margin-top: 20px;
-}
-
 .required__input {
   position: relative;
 }
