@@ -739,8 +739,8 @@ textarea {
   resize: none;
 }
 
-div[data-netlify-recaptcha] {
-  margin: 10px 0 20px 0;
+.contact__button {
+  margin-top: 20px;
 }
 
 .required__input {
