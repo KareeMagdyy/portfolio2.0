@@ -370,19 +370,26 @@
           </div>
         </div>
 
-        <form class="contact__form">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="contact__form">
           <div class="contact__inputs">
-            <input type="text" name="name" id="name" placeholder="Name" class="contact__input">
-            <input type="email" name="email" id="email" placeholder="Email" class="contact__input">
+            <div class="required__input">
+              <input type="text" name="name" id="name" placeholder="Name" class="contact__input" required>
+            </div>
+            <div class="required__input">
+              <input type="email" name="email" id="email" placeholder="Email" class="contact__input" required>
+            </div>
           </div>
 
           <div class="contact__inputs">
             <input type="text" name="project" id="project" placeholder="Project" class="contact__input">
-            <input type="tel" name="number" id="number" placeholder="Number" class="contact__input">
+            <input type="tel" name="number" id="number" placeholder="Contact Number" class="contact__input">
+          </div>
+          <div class="required__input">
+            <textarea name="message" id="" cols="0" rows="7" placeholder="Message" class="contact__input"
+              required></textarea>
           </div>
 
-          <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
-
+          <div data-netlify-recaptcha="true"></div>
           <input type="submit" value="Send Message" class=" button contact__button">
         </form>
       </div>

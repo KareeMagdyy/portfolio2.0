@@ -739,6 +739,23 @@ textarea {
   resize: none;
 }
 
+.required__input {
+  position: relative;
+}
+
+.required__input::before {
+  position: absolute;
+  content: "*";
+  color: #ff0000;
+  top: 3%;
+  right: 2%;
+}
+
+.required__input:nth-of-type(3)::before {
+  top: 2%;
+  right: 1%;
+}
+
 /*==================== FOOTER ====================*/
 .footer-wave {
   position: relative;
