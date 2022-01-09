@@ -1,3 +1,12 @@
+/*======= PRE-Loader =========*/
+const main = document.querySelector(".l-main");
+const loader = document.querySelector(".pre__loader");
+
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+  main.style.display = "block";
+});
+
 /*====== Show Menu ======*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),

@@ -149,6 +149,71 @@ img {
   background-color: #000;
 }
 
+/* ============== PRE-LOADER================ */
+
+.pre__loader {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255 255 255 / 0.5);
+  animation: circle 2s ease-in-out infinite;
+}
+
+.pre__loader-span {
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-weight: 700;
+  animation: opacity 2s infinite;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #ffffff;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #ffffff;
+  }
+}
+
+.l-main {
+  display: none;
+}
+
 /*==================== NAV ====================*/
 
 .nav {
@@ -229,7 +294,6 @@ img {
   color: var(--primary-color-dark);
 }
 
-.scroll-header .nav__logo:hover,
 .scroll-header .nav__toggle:hover,
 .scroll-header .nav__link:hover {
   color: var(--primary-color-light);
@@ -343,7 +407,7 @@ img {
   height: calc(100vh - var(--header-height));
   grid-template-rows: repeat(2, max-content);
   align-content: space-around;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 .home__data {
   border-left: 4px solid var(--primary-color-lighten);
@@ -485,11 +549,12 @@ img {
   margin-top: var(--mb-2);
   display: flex;
   align-items: center;
-  gap: var(--mb-1);
+  /* gap: var(--mb-1); */
 }
 
 .qualification__title-icon {
   font-size: 1.5rem;
+  margin-right: var(--mb-1);
 }
 
 .qualification__box {
@@ -507,7 +572,11 @@ img {
   margin-bottom: 0.3rem;
   display: flex;
   align-items: center;
-  gap: var(--mb-1);
+  /* gap: var(--mb-1); */
+}
+
+.qualification__icon {
+  margin-right: var(--mb-1);
 }
 
 .qualification__work-credential {
@@ -522,6 +591,32 @@ img {
 /*==================== SERVICES ====================*/
 
 /* Active Modal */
+
+/*==================== PROJECT IN MIND ====================*/
+.project__container {
+  padding: 1.5rem 1rem;
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color-lighten);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.project__icon,
+.project__title {
+  margin-bottom: var(--mb-1);
+}
+
+.project__icon {
+  font-size: 3.5rem;
+}
+
+.project__title {
+  font-size: 1.5rem;
+}
+
+.project__description {
+  margin-bottom: var(--mb-4);
+}
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__nav {
@@ -585,32 +680,6 @@ img {
 .active-skill {
   color: var(--primary-color-dark);
   font-weight: var(--font-semi-bold);
-}
-
-/*==================== PROJECT IN MIND ====================*/
-.project__container {
-  padding: 1.5rem 1rem;
-  background-color: var(--primary-color-dark);
-  color: var(--primary-color-lighten);
-  border-radius: 0.5rem;
-  text-align: center;
-}
-
-.project__icon,
-.project__title {
-  margin-bottom: var(--mb-1);
-}
-
-.project__icon {
-  font-size: 3.5rem;
-}
-
-.project__title {
-  font-size: 1.5rem;
-}
-
-.project__description {
-  margin-bottom: var(--mb-4);
 }
 
 /*==================== TESTIMONIAL ====================*/
@@ -684,6 +753,17 @@ img {
 
 .contact__icon {
   color: var(--primary-color);
+}
+
+.chat-icon-whatsapp {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+}
+.chat-icon-telegram {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 
 .contact-__title {
@@ -818,9 +898,10 @@ textarea {
 }
 
 .footer__link {
-  padding: 0.5rem;
+  margin-left: var(--mb-2);
   font-size: 1.5rem;
   color: var(--primary-color-lighten);
+  z-index: 2;
   transition: 300ms;
 }
 
@@ -886,11 +967,16 @@ textarea {
 
   .nav__list {
     display: flex;
-    gap: var(--mb-3);
+    /* gap: var(--mb-3); */
   }
 
   .nav__item {
     margin-bottom: 0;
+    margin-left: var(--mb-3);
+  }
+
+  .nav__logo {
+    font-size: 1.1rem;
   }
 
   .nav__toggle {
@@ -918,11 +1004,12 @@ textarea {
   .home__social {
     flex-direction: row;
     align-items: center;
-    gap: var(--mb-4);
+    /* gap: var(--mb-4); */
   }
 
   .home__social-icon {
     margin-bottom: 0;
+    margin-left: var(--mb-4);
   }
 
   .home__img img {
@@ -986,6 +1073,10 @@ textarea {
 
   .qualification__container {
     column-gap: 6rem;
+  }
+
+  .nav__logo {
+    font-size: 1.2rem;
   }
 
   .contact__form {
