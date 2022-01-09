@@ -128,12 +128,12 @@ const swiper = new Swiper(".testimonial__container", {
 
 /* ====== GSAP Animations ======= */
 
-gsap.from(".home__img", { opacity: 0, duration: 2, delay: 0.5, x: 60 });
-gsap.from(".home__data", { opacity: 0, duration: 2, delay: 0.8, y: 25 });
+gsap.from(".home__img", { opacity: 0, duration: 2, delay: 0.7, x: 60 });
+gsap.from(".home__data", { opacity: 0, duration: 2, delay: 1, y: 25 });
 gsap.from(".home__greeting, .home__name, .home__profession, .home__button", {
   opacity: 0,
   duration: 2,
-  delay: 1,
+  delay: 1.2,
   y: 25,
   ease: "expo.out",
   stagger: 0.2,
@@ -142,7 +142,7 @@ gsap.from(".home__greeting, .home__name, .home__profession, .home__button", {
 gsap.from(".nav__logo, .nav__toggle", {
   opacity: 0,
   duration: 2,
-  delay: 1.5,
+  delay: 1.7,
   y: 25,
   ease: "expo.out",
   stagger: 0.2,
@@ -151,7 +151,7 @@ gsap.from(".nav__logo, .nav__toggle", {
 gsap.from(".nav__item", {
   opacity: 0,
   duration: 2,
-  delay: 1.8,
+  delay: 2,
   y: 25,
   ease: "expo.out",
   stagger: 0.2,
@@ -160,7 +160,7 @@ gsap.from(".nav__item", {
 gsap.from(".home__social-icon", {
   opacity: 0,
   duration: 2,
-  delay: 2.3,
+  delay: 2.5,
   y: 25,
   ease: "expo.out",
   stagger: 0.2,

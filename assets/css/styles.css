@@ -154,7 +154,7 @@ img {
 .pre__loader {
   min-height: 100vh;
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,7 +171,7 @@ img {
 
 .pre__loader-span {
   letter-spacing: 1.5px;
-  color: #fff;
+  color: var(--primary-color-dark);
   font-weight: 700;
   animation: opacity 2s infinite;
 }
@@ -201,12 +201,12 @@ img {
 @keyframes circle {
   0% {
     transform: rotate(0deg);
-    box-shadow: 1px 5px 2px #ffffff;
+    box-shadow: 1px 5px 2px var(--primary-color-dark);
   }
 
   100% {
     transform: rotate(360deg);
-    box-shadow: 1px 5px 2px #ffffff;
+    box-shadow: 1px 5px 2px var(--primary-color-dark);
   }
 }
 
@@ -510,7 +510,7 @@ img {
 }
 
 .about .bd-container {
-  margin-top: var(--mb-4);
+  margin-top: var(--mb-5);
 }
 
 .about__data {
@@ -536,6 +536,78 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+
+.marquee {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0.7rem;
+  width: 80vw;
+  height: 10vh;
+  color: red;
+  overflow: hidden;
+}
+
+.marquee::before,
+.marquee::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 7%;
+  height: 100%;
+  z-index: 1;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--primary-color-lighten) 0%,
+    transparent 100%
+  );
+}
+.marquee::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--primary-color-lighten) 0%,
+    transparent 100%
+  );
+}
+
+.marquee__content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 10s linear infinite;
+}
+
+.marquee__content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-20vw * 6));
+  }
+}
+
+.marquee__content li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  flex-shrink: 0;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+}
+
+.marquee__content li:hover {
+  transform: scale(1.1);
+}
 
 /*==================== QUALIFICATION ====================*/
 
@@ -912,7 +984,15 @@ textarea {
 .footer__copy {
   font-size: var(--smaller-font-size);
   color: var(--primary-color-light);
-  padding-bottom: var(--mb-3);
+  padding-bottom: var(--mb-4);
+}
+
+.footer__copy a {
+  color: inherit;
+}
+
+.footer__copy a:hover {
+  text-decoration: underline;
 }
 
 /*========== SCROLL BAR ==========*/
@@ -1081,5 +1161,13 @@ textarea {
 
   .contact__form {
     width: 75%;
+  }
+
+  .marquee {
+    height: 20vh;
+  }
+
+  .marquee__content li {
+    font-size: 5rem;
   }
 }
