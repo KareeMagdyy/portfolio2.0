@@ -154,7 +154,7 @@ img {
 .pre__loader {
   min-height: 100vh;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--primary-color-lighten);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +165,7 @@ img {
   height: 170px;
   width: 170px;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(255 255 255 / 0.5);
+  box-shadow: 0 0 5px var(--primary-color-dark);
   animation: circle 2s ease-in-out infinite;
 }
 
