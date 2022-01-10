@@ -72,6 +72,7 @@ body {
   background-color: var(--primary-color-lighten);
   color: var(--text-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,
@@ -128,11 +129,35 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
+/* =============== REUSABLE Icons ================== */
+
+.bxl-html5 {
+  color: #f06529;
+}
+
+.bxl-css3 {
+  color: #2965f1;
+}
+
+.bxl-javascript {
+  color: #f0db4f;
+}
+.bxl-sass {
+  color: #cd6799;
+}
+.bxl-git {
+  color: #f1502f;
+}
+.bxl-bootstrap {
+  color: #602c50;
+}
+
 /*==================== LAYOUT ====================*/
 .bd-container {
   max-width: 1024px;
   width: calc(100% - 2rem);
-  margin-inline: var(--mb-2);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
 }
 
 .bd-grid {
@@ -536,10 +561,15 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.marquee__contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .marquee {
   position: relative;
-  margin: 0 auto;
   border-radius: 0.7rem;
   width: 80vw;
   height: 10vh;
@@ -723,6 +753,9 @@ img {
 
 .portfolio__img {
   width: 100%;
+  text-align: center;
+  max-width: 350px;
+  height: 280px;
   transition: 400ms;
 }
 
@@ -733,6 +766,10 @@ img {
 .portfolio__subtitle {
   font-size: var(--small-font-size);
   color: var(--primary-color-light);
+}
+
+.portfolio__subtitle i {
+  font-size: 2rem;
 }
 
 .portfolio__title {
@@ -752,6 +789,19 @@ img {
 .active-skill {
   color: var(--primary-color-dark);
   font-weight: var(--font-semi-bold);
+}
+
+.portfolio__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio__details a {
+  display: flex;
+  align-items: center;
+}
+.portfolio__details i {
+  margin-right: var(--mb-1);
 }
 
 /*==================== TESTIMONIAL ====================*/

@@ -125,19 +125,21 @@
     <section class="skills section bd-container">
       <span class="section-subtitle">My</span>
       <h2 class="section-title">Skills</h2>
-      <div class="marquee">
-        <ul class="marquee__content">
-          <li><i class='bx bxl-html5' style="color:#F06529"></i></li>
-          <li><i class='bx bxl-css3' style="color:#2965f1"></i></li>
-          <li><i class='bx bxl-javascript' style='color:#F0DB4F'></i></li>
-          <li><i class='bx bxl-sass' style='color:#CD6799'></i></li>
-          <li><i class='bx bxl-git' style='color:#F1502F'></i></li>
-          <li><i class='bx bxl-bootstrap' style='color:#602C50'></i></li>
-          <li><i class='bx bxl-html5' style="color:#F06529"></i></li>
-          <li><i class='bx bxl-css3' style="color:#2965f1"></i></li>
-          <li><i class='bx bxl-javascript' style='color:#F0DB4F'></i></li>
-          <li><i class='bx bxl-sass' style='color:#CD6799'></i></li>
-        </ul>
+      <div class="marquee__contain">
+        <div class="marquee">
+          <ul class="marquee__content">
+            <li><i class='bx bxl-html5'></i></li>
+            <li><i class='bx bxl-css3'></i></li>
+            <li><i class='bx bxl-javascript'></i></li>
+            <li><i class='bx bxl-sass'></i></li>
+            <li><i class='bx bxl-git'></i></li>
+            <li><i class='bx bxl-bootstrap'></i></li>
+            <li><i class='bx bxl-html5'></i></li>
+            <li><i class='bx bxl-css3'></i></li>
+            <li><i class='bx bxl-javascript'></i></li>
+            <li><i class='bx bxl-sass'></i></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -282,46 +284,71 @@
 
       <div class="portfolio__nav">
         <span class="portfolio__item" data-filter="all">All</span>
-        <span class="portfolio__item" data-filter=".html">HTML</span>
-        <span class="portfolio__item" data-filter=".css">CSS</span>
-        <span class="portfolio__item" data-filter=".js">JS</span>
+        <span class="portfolio__item" data-filter=".js">JavaScript</span>
+        <span class="portfolio__item" data-filter=".bootstrap">BootStrap</span>
+        <!-- <span class="portfolio__item" data-filter=".sass">SASS</span> -->
       </div>
 
       <div class="portfolio__container bd-grid">
 
-        <div class="portfolio__content mix all">
+        <div class="portfolio__content mix html css js">
           <a href="#"><img src="/assets/img/genshin-wish-tool.png" alt="Wish Calculator Thumbnail"
               class="portfolio__img"></a>
           <div class="portfolio__data">
-            <span class="portfolio__subtitle">HTML,CSS & JS</span>
+            <span class="portfolio__subtitle">
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3'></i>
+              <i class='bx bxl-javascript'></i>
+            </span>
             <a href="#">
-              <h2 class="portfolio__title">Genshin Impact Wish Calculator</h2>
+              <h2 class="portfolio__title">Genshin Impact Calculator</h2>
             </a>
-            <a href="#" class="button button-link">View Details</a>
+            <div class="portfolio__details">
+              <a href="https://banner-calculator.netlify.app" target="_blank" class="button"><i
+                  class='bx bx-station'></i> Demo</a>
+              <a href="https://github.com/KareeMagdyy/genshin-wish-counter.git" target="_blank" class="button"><i
+                  class='bx bx-code-alt'></i> Code</a>
+            </div>
           </div>
         </div>
 
-        <div class="portfolio__content mix html css">
-          <a href="#"><img src="/assets/img/genshin-wish-tool.png" alt="Wish Calculator Thumbnail"
-              class="portfolio__img"></a>
+        <div class="portfolio__content mix html css js">
+          <a href="#"><img src="/assets/img/todo.png" alt="Todo App Thumbnail" class="portfolio__img"></a>
           <div class="portfolio__data">
-            <span class="portfolio__subtitle">HTML & CSS</span>
+            <span class="portfolio__subtitle">
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3'></i>
+              <i class='bx bxl-javascript'></i>
+            </span>
             <a href="#">
-              <h2 class="portfolio__title">Genshin Impact Wish Calculator</h2>
+              <h2 class="portfolio__title">Todo App</h2>
             </a>
-            <a href="#" class="button button-link">View Details</a>
+            <div class="portfolio__details">
+              <a href="https://kareem-todo.netlify.app" target="_blank" class="button"><i class='bx bx-station'></i>
+                Demo</a>
+              <a href="https://github.com/KareeMagdyy/todo.git" target="_blank" class="button"><i
+                  class='bx bx-code-alt'></i> Code</a>
+            </div>
           </div>
         </div>
 
-        <div class="portfolio__content mix js">
-          <a href="#"><img src="/assets/img/genshin-wish-tool.png" alt="Wish Calculator Thumbnail"
-              class="portfolio__img"></a>
+        <div class="portfolio__content mix html css bootstrap">
+          <a href="#"><img src="/assets/img/candy-museum.png" alt="Todo App Thumbnail" class="portfolio__img"></a>
           <div class="portfolio__data">
-            <span class="portfolio__subtitle">JS</span>
+            <span class="portfolio__subtitle">
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3'></i>
+              <i class='bx bxl-bootstrap'></i>
+            </span>
             <a href="#">
-              <h2 class="portfolio__title">Genshin Impact Wish Calculator</h2>
+              <h2 class="portfolio__title">Candy Museum</h2>
             </a>
-            <a href="#" class="button button-link">View Details</a>
+            <div class="portfolio__details">
+              <a href="https://candies-museum.netlify.app" target="_blank" class="button"><i class='bx bx-station'></i>
+                Demo</a>
+              <a href="https://github.com/KareeMagdyy/candy-museum" target="_blank" class="button"><i
+                  class='bx bx-code-alt'></i> Code</a>
+            </div>
           </div>
         </div>
 
