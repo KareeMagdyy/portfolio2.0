@@ -181,24 +181,23 @@ img {
   width: 100%;
   background-color: var(--primary-color-lighten);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
   justify-content: center;
 }
 
 .circle {
   position: absolute;
-  height: 170px;
-  width: 170px;
+  height: 175px;
+  width: 175px;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--primary-color-dark);
   animation: circle 2s ease-in-out infinite;
 }
 
-.pre__loader-span {
-  letter-spacing: 1.5px;
-  color: var(--primary-color-dark);
-  font-weight: 700;
-  animation: opacity 2s infinite;
+.pre__loader-div {
+  animation: opacity 1.5s infinite;
 }
 
 @keyframes opacity {
