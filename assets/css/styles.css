@@ -816,6 +816,9 @@ img {
 
 .testimonial__content {
   display: grid;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--primary-color-dark);
   color: var(--primary-color-lighten);
   border-radius: 0.5rem;
