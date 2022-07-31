@@ -152,6 +152,26 @@ img {
   color: #602c50;
 }
 
+.bxl-react {
+  color: #00d8ff;
+}
+
+.bxl-tailwind-css {
+  color: #38bdf8;
+}
+
+.bxs-file-json {
+  color: var(--primary-color);
+}
+
+.bxl-firebase {
+  color: #ffcb2e;
+}
+
+.bxl-netlify {
+  color: #7ab3cf;
+}
+
 /*==================== LAYOUT ====================*/
 .bd-container {
   max-width: 1024px;
@@ -619,7 +639,7 @@ img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-20vw * 6));
+    transform: translateX(calc(-20vw * 8));
   }
 }
 
