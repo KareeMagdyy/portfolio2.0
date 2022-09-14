@@ -645,6 +645,7 @@ img {
 
 .marquee__content li {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 20vw;
@@ -656,6 +657,17 @@ img {
 
 .marquee__content li:hover {
   transform: scale(1.1);
+}
+
+.marquee__content li p {
+  font-size: 1rem;
+  color: var(--primary-color-dark);
+}
+
+@media (max-width: 768px) {
+  .marquee__content li p {
+    font-size: 0.65rem;
+  }
 }
 
 /*==================== QUALIFICATION ====================*/
