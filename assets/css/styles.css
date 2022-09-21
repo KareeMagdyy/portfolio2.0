@@ -1256,3 +1256,7 @@ textarea {
     font-size: 5rem;
   }
 }
+
+.about__img {
+  width: 300px;
+}
