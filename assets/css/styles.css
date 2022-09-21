@@ -577,6 +577,7 @@ img {
   justify-self: center;
   width: 250px;
   border-radius: 18px;
+  background-color: var(--primary-color);
 }
 
 /*==================== SKILLS ====================*/
@@ -1182,10 +1183,6 @@ textarea {
 
   .home__img img {
     width: 440px;
-  }
-
-  .about__img {
-    width: 300px;
   }
 
   .portfolio__container {
