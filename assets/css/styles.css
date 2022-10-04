@@ -628,7 +628,7 @@ img {
   list-style: none;
   height: 100%;
   display: flex;
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 20s linear infinite;
 }
 
 .marquee__content:hover {
